@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set the count to zero</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h2{
+            font-size: 50px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        button{
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+            width: 200px;
+            margin-bottom: 5px;
+            border-radius: 10px;
+        }
+
+        #increment-btn{
+            background: darkred;
+            cursor: pointer;
+        }
+
+        #save-btn{
+            background: green;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <div class="container">
+        <h1>People entered : </h1>
+        <h2 id="count-el">0</h2>
+
+        <!-- 1. Create an INCREMENT button with the id="increment-button"-->
+        <button id="increment-btn">INCREMENT</button>
+
+        <!-- 2. Create a SAVE button. Set the id to "save-btn" and call the save() function when it's clicked -->
+        <button id="save-btn">SAVE</button>
+
+        <p>Previous entries : <span id="save-el"></span></p>
+
+    </div>
+
+    <script>
+        // initialize the count as 0
+        // listener for clicks on the increment button
+        // increment the count variable then the button is cliked
+        // change the count-el in the HTML to reflect the new count
+
+        let count = 0;
+        let result;
+        let = incrementBtn = document.getElementById('increment-btn');
+        let saveElement = document.getElementById('save-el');
+        let countElement =  document.getElementById('count-el');
+
+        function countPassenger(){
+            
+            
+            incrementBtn.addEventListener('click', () => {
+                count++;
+               countElement.textContent = count;
+
+
+            });
+
+        }
+
+        function savePassenger(){
+            document.getElementById('save-btn').addEventListener('click', () => {
+                saveElement.innerText += ' ' + count + ' - ';
+
+                countElement.textContent = 0; // That is the count incremented
+                count = 0; // That is the count initialized
+            });
+
+            countPassenger();            
+        }
+
+        savePassenger();
+
+
+
+
+        
+        
+    </script>
+</body>
+</html>
