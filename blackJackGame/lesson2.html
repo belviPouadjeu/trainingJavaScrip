@@ -10,18 +10,50 @@
 
     <script>
         
-        let firstCard = 5;
-        let secondCard = 8;
-        let sum = firstCard + secondCard;
+        let firstCard = 10;
+        let secondCard = 7;
 
-        if(sum < 21){
-            console.log("Do you want to draw a new card?")
+        let sum = firstCard + secondCard + 1;
+
+        if(sum <= 21){
+            console.log("Do you want to draw a new card? 😞")
         } else if(sum === 21){
-            console.log("Wohoo! You've got Blackjack!");
+            console.log("Wohoo! You've got Blackjack! 🎉");
 
-        }else if(sum > 21){
-            console.log("You're out of the game!");
+        }else{
+            console.log("You're out of the game! 😞");
         }
+
+        /*
+
+        // Check if the person is old enough to enter the nightclub (21)
+        // Log a suitable message to the console in both cases
+
+        let age = 2;
+
+        if(age <= 20){
+            console.log("You can not enter the club");
+        }else{
+            console.log("Welcome");
+        }*/
+        
+        /*
+
+        // Check if the person is eligible for a birthday card from the ing! (100)
+
+        let age = 100;
+
+        // if less than 100 -> "Not elegible"
+        //  else if exactly 100 -> "Here is your bithday card from the king"
+        // else   -> "Not elegible, you have already gotten one"
+
+        if(age < 100){
+            console.log("Not elegible");
+        }else if(age === 100){
+            console.log("Here is your bithday card from the king");
+        }else{
+            console.log("Not elegible, you have already gotten one");
+        }*/
     </script>
 </body>
 </html>

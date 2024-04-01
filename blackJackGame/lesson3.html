@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add the hasBlackJack variable</title>
+</head>
+<body>
+    <script>
+        let firstCard = 10;
+        let secondCard = 11;
+        let sum = firstCard + secondCard;
+        let hasBlackJack = false;
+        // 1. Create a variable called isAlive and assign it to true
+        let isAlive = true;
+
+        // 2. Flip its value to false in the appropriate code block
+
+
+        if(sum <= 20){
+            console.log("Do you want to draw a new card? 😞");
+           
+        } else if(sum === 21){
+            console.log("Wohoo! You've got Blackjack! 🎉");
+            hasBlackJack = true;
+
+        }else{
+            console.log("You're out of the game! 😞");
+            isAlive = false
+        }
+
+        // 3. Log it out to check you're doing it right
+        console.log(isAlive);
+
+        // CASH OUT
+        console.log(hasBlackJack);
+    </script>
+</body>
+</html>
