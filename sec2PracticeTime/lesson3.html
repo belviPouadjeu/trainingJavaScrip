@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: #333;
+            margin-top: 150px;
+        }
+
+        img{
+            width: 150px;
+
+        }
+
+        .container{
+            width: 300px;
+            margin: 0 auto;
+            background-color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        button{
+            border: none;
+            background-color: blue;
+            padding: 10px;
+            cursor: pointer;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <img src="images/shoes.png">
+        <p>Adidas shoes</p>
+        <button>Purchase - $149</button>
+        <p id="error"></p>
+
+    </div>
+
+    <script>
+        
+        // when the user clicks the purshase button, render out
+        // Something went wrong, please try again""
+        // That has the id="error"
+        let button = document.querySelector('button');
+        let error = document.getElementById('error');
+
+        button.addEventListener('click', () => {
+            error.innerHTML = "Something went wrong, please try again";
+        });
+    </script>
+</body>
+</html>
