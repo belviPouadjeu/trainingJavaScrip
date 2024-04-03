@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New card</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS';
+            background-color: teal;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1{
+            color: goldenrod;
+        }
+
+        #message-el{
+            font-style: italic;
+        }
+
+        .container-button{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button{
+            color: #016f32;
+            width: 150px;
+            background-color: goldenrod;
+            padding: 10px 0;
+            font-size: 12px;
+            border: none;
+            font-weight: bold;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Blackjack</h1>
+    <p id="message-el"></p>
+    <!-- Create a button that says START GAME. Make it call a startGame() function when clicked -->
+    <p id="cards-el"></p>
+    <!-- Give the cards paragraph and id of cards-el -->
+    <p id="sum"> </p>
+    <!-- Create NEW CARD button, make it run newcard() oh click-->
+    <div class="container-button">
+        <button id="start-game">START GAME</button>
+        <button id="new-card">NEW CARD</button>
+    </div>
+
+    <script src="lesson6.js"></script>
+</body>
+</html>
